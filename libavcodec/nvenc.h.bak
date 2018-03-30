@@ -155,7 +155,6 @@ typedef struct NvencContext
     int device;
     int flags;
     int async_depth;
-    int a53_cc;
     int rc_lookahead;
     int aq;
     int no_scenecut;

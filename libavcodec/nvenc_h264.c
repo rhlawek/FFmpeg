@@ -92,6 +92,8 @@ static const AVOption options[] = {
     { "list",         "List the available devices",         0,                    AV_OPT_TYPE_CONST, { .i64 = LIST_DEVICES },        0, 0, VE, "gpu" },
     { "delay",        "Delay frame output by the given amount of frames",
                                                             OFFSET(async_depth),  AV_OPT_TYPE_INT,   { .i64 = INT_MAX }, 0, INT_MAX, VE },
+    { "a53cc",        "Use A53 Closed Captions (if available)", 
+                                                            OFFSET(a53_cc),   AV_OPT_TYPE_BOOL,   { .i64 = 1 },                    0, 1, VE},
     { "no-scenecut",  "When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts",
                                                             OFFSET(no_scenecut),  AV_OPT_TYPE_BOOL,  { .i64 = 0 }, 0,  1, VE },
     { "forced-idr",   "If forcing keyframes, force them as IDR frames.",
