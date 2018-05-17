@@ -8,7 +8,9 @@ make && make install
 cd /c/OSS/x264
 make clean
 CC=cl ./configure --enable-static --prefix=/c/builds/x264/x86 --disable-cli
-make && make install
+#make 
+make fprofiled
+make install
 
 cd /c/OSS/ffmpeg_rah
 
